@@ -1,0 +1,232 @@
+1. what is program?
+	A Program is defined as the set of instruction which are intended to perform some activity.
+
+2. what is programming language?
+	A programming language is defined as the set of instruction used to establish a communication 
+	between the programmer and the machine.
+
+3. what are the different level of programming ?
+	The programming world is divided into 3 parts:
+	1. Machine level language:
+		code is written in 0's and 1's Binary language
+		Difficult to debug(finding the root cause of the issue)
+		Difficult to understand
+	2. Assembly level language:
+		code is written in pneumonic format
+		eg.: ADD, SUB, MUL, DIV, STR
+		Debugging is simple
+		confusion in case of registers
+	3. High level Language:
+		code is written in symbolic fashion
+		eg.: +,-,*,/
+		very easy to to debug as compared to any other language
+		Easy understood by humans
+	
+4. what are the different high level language HLL?
+	The most important HLL's are:
+	1. Basic combined programming Language(BPCL):
+		first popoular HLL
+		It occupy more memory
+		Because of above disadvantages BCPL became expensive language
+		Non portable
+	2. B language:
+		popoular HLL
+		It occupy more memory
+		Not structured
+		Non portable
+	3. C language:
+		popular HLL from decades
+		it occupy less memory
+		It is Structured
+		Non-portable
+		It was not Object oriented
+	4. C++ Language:
+		popular HLL from decades
+		it occupy less memory
+		It is Structured
+		Non-portable
+		It is object oriented
+	5. Java programming language:
+		popular HLL from decades
+		It occupy less memory
+		it is portable
+		It supports internet
+		It supports enterprise web application development
+		
+5. what is a class in java:
+	A class is defined as blue print of an object.
+	the class does not exists in reality
+	It is with the help of the class that we will be defining how an object looks like.
+
+6. what is object?
+	An object is defined as the instance of the class
+	An object is the real world entity which has an existence.
+	we can create multiple object of a particular class
+	we cannot create object of 2 class together as a single entity
+	
+7. what is object orientation?
+	Object: Real world entity
+	Orientation: perspective
+	Object Orientation: Perspective towards real world entity
+
+8. what are the principles of object orientation?
+	There are basically 5 principle of Object orientation
+	1. The world is collection of object
+	2. Every object is usefull and no object is useless
+	3. Every object is under constant interaction.
+	4. Every object belongs to a class and the class is just a blue print.
+	5. EVery object has something and every object does something.
+
+9. create a simple class with 5 properties and 5 behaviours
+	properties---> has part ---->data-types
+	behaviours --->does part ----> methods
+	
+	DOG
+			properties: name, age, colour, cost, breed
+			
+			behaviours: run, walk, eat, sleep, bark
+			
+			
+	class DOG
+	{
+		//properties
+			String name;
+			int age;
+			String colour;
+			int cost;
+			String breed
+			
+		//behaviours
+			void run(){}
+			void walk() {}
+			void eat() {}
+			void sleep() {}
+			void bark() {}	
+	}
+
+10. what is the process of compilation?	
+		HLL--->compiler--->MLL--->RAM--->processor--->O/p
+		Incase of compiler the code will be converted to MLL in a single go.
+
+11. what is interpretation?
+		High level line-->interpreter--->BinaryLine --->RAM ---> Processor ---> Output
+		
+		In Case of interpreter the code will be converted to MLL line by line.
+
+12. Is Java compiled Programming Language or an interpreted programming language?
+		java is both compiled as well as interpreted language.
+
+13. what is the syntax of a method?
+		layman approach:
+			output_from_method    name_of_method(input_to_method)
+			{
+					-----(Body of method)
+			}
+		
+		Technical approach:
+			return_type    name_of_method(parameters)
+			{
+					-----(Body of method)
+			}
+			Examples:
+			void add(){
+				System.out.println("add method");
+			}
+			
+			int add(int a, int b)
+			{
+				return a+b;
+			}
+	
+14. what are the different types of methods?
+		there are 4 types:
+			NANR-- No Argument No Return_Value 
+			NAWR-- No Argument With Return_Value
+			WANR-- With Argument No Return_Value
+			WAWR-- With Argument With Return_Value
+	
+15. Hello World program in java
+		class Program1{
+			public static void main(String args[])
+				{
+					System.out.println("Hello World");
+				}
+		}
+		Main Method in java:
+			1. public: to make it visible or available for all.
+			2. static : to make it accessible for all and also to execute this method 
+						without creating object	
+			3. void: no return value.
+			4. String args[]: The array of string passed as the input to the main method.
+	
+		java code --> Java compiler --> ILL --> JVM -->MLL-->RAM-->Processor-->Output
+		
+		ILL---> Intermediate level language
+		JVM --> Java Virtual Machine is responsible for converting ILL to MLL
+
+16. what are variable?
+		A variable is a storage space where we can store some data.
+		There are 3 types of Variable:
+			1.Instance Variable
+			2.Local Variable
+			3.Static Variable
+
+17. what are Instance Variable?
+		Any variable present directly inside the class is called as the instance variable.
+		The Instance variable will get default values allocated form the JVM.
+		The Instance variable will get the memory allocated in the heap segment.
+		The Instance variable are also called  as object variables because-
+		-these variables will always be associated with the object being created.
+		
+18. what are Local variable?
+		Any variable present directly inside the method is called as the Local variable.
+		The Local variable will not get default values.
+		The Local variable will get the memory allocated in the stack segment.
+		The Local variable are not associated with the object being created rather they are-
+		-associated with the methods inside which they are present.
+			
+
+19. what are static variable?
+		Any variable present directly inside the class and associated with "Static Keyword" 
+		is called as the Static variable.
+		The STatic variables are firstly the instance variables with static privileges.
+		The Static variable will get default values allocated form the JVM.
+		The Static variable will get the memory allocated in the static segment.
+		The Static variable are also called  as VIP variables because-
+		-these variables will get the memory allocated first and only once.
+
+
+20. What are the different types of data in java?
+		Real world data 					Representation in java 				format used
+		textual type of data		 		char data type 						ASCII or UTF
+		integer type real world	data		byte, short, int, long 				base-2 format
+		real number type real world data	float, double 						IEEE
+		image 								built in fuctions 					jvm dependent
+		audio 								built in fuctions 					jvm dependent
+		video 								built in fuctions 					jvm dependent
+		yes/no -- true/false 				boolean 							jvm dependent
+
+
+21. What are the segregations of Datatypes in java?
+		In Java the datatypes are segregated into 2 types:
+			i. Primitive Datatype:
+				ex: int, short, byte ,long, float, double, char, etc
+			ii. Non-Primitive Datatype:
+				ex: Objects and Wrapper
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+	
+	
+	
